@@ -1,0 +1,23 @@
+
+topic : "政府採購法"
+# 偏好設定
+preferences: "最簡單的入門政府採購法，好掌握一些基本概念與原則，對一些法律的實務有最簡單的基礎"
+
+# LLM 模型設定
+llm_model: gemini-2.0-flash-thinking-exp-01-21
+GEMINI_API_KEY: YOUR_API_KEY
+
+# 輸出設定
+output_path: output  # 輸出檔案儲存路徑 (會在程式執行目錄下建立 output 資料夾)
+state_file_path: program_state.json  # 程式狀態儲存檔案路徑
+
+# 提示詞模板設定
+outline_format: outline_format.txt
+section_format: section_format.txt
+outline_prompt_template: "請藉由一本書來教我 {preferences}，請先給我兩層（每個章節含小節）的目錄，並對章與各小節，提供很簡短的摘要。我需要全部的章節。請遵守以下格式輸出：\n{outline_format_content}"
+
+section_prompt_template: "請針對 {chapter_title} - {section_title} 這個小節，以更詳細的方式提供內容，不用重複給摘要，請以下列格式回答：\n{section_format_content}"
+
+# 檔案上傳設定
+upload_files: true  # 是否啟用檔案上傳功能 (true/false)
+upload_directory: upload_files  # 檔案上傳目錄路徑 (會在程式執行目錄下建立 upload_files 資料夾，預設讀取 .md 檔案)
