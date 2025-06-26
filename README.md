@@ -2,6 +2,16 @@
 generate a book for your learning
 - verison: V0.1
 
+# 方法論手動操作
+我習慣使用 obsidian 來編輯 md, 並複製這個範本後開始與繼續
+- [AIBooks-template](./AIBooks-template.md)
+
+## 手動操作範例書
+- [《Vibe Coding：資深工程師與架構師的 LLM 開發新典範》](sample_book/《Vibe%20Coding：資深工程師與架構師的%20LLM%20開發新典範》.md)
+
+## 夥伴試用經驗
+- [《從零開始的生物統計之旅：掌握數據、解讀生命》](sample_book/《從零開始的生物統計之旅：掌握數據、解讀生命》.md)
+
 # 使用方法
 - 產生的書有兩種：
     - 章節目錄含摘要版在 upload_files, 主要拿來初步閱讀與自動/手動生成小節時使用
@@ -21,7 +31,6 @@ generate a book for your learning
     - 主要修改 gemini 生成 function, 存檔後再取回, 按格式檔案生成 這幾個部分
 - 後面的規格文件由 LLM 生成，還沒仔細改成最符合目前系統實作的樣子，比較像是依照這個規格，生成的起始樣態後修改
    
-
 ## AIQA: LLM 輔助書籍生成程式 - 規格文件 **
 
 **1. 專案名稱:** 自學書籍生成程式
